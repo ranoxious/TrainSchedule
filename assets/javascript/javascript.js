@@ -2,34 +2,20 @@ $(document).ready(function () {
 
 
 
-var config = {
-    apiKey: "AIzaSyBIBgPKu45_YElrthWIVwmLfH6bZ7AFqws",
-    authDomain: "trainschedule-d8efd.firebaseapp.com",
-    databaseURL: "https://trainschedule-d8efd.firebaseio.com",
-    projectId: "trainschedule-d8efd",
-    storageBucket: "trainschedule-d8efd.appspot.com",
-    messagingSenderId: "974316326991"
-  };
-  firebase.initializeApp(config);
+    var config = {
+        apiKey: "AIzaSyBIBgPKu45_YElrthWIVwmLfH6bZ7AFqws",
+        authDomain: "trainschedule-d8efd.firebaseapp.com",
+        databaseURL: "https://trainschedule-d8efd.firebaseio.com",
+        projectId: "trainschedule-d8efd",
+        storageBucket: "trainschedule-d8efd.appspot.com",
+        messagingSenderId: "974316326991"
+      };
+      firebase.initializeApp(config);
 
 
 var trainData = firebase.database();
 
 
-// function startTime() {
-//     var today = new Date();
-//     var h = today.getHours();
-//     var m = today.getMinutes();
-//     var s = today.getSeconds();
-//     m = checkTime(m);
-//     s = checkTime(s);
-//     document.getElementById('txt').innerHTML =
-//     h + ":" + m + ":" + s;
-//     var t = setTimeout(startTime, 500);
-// }
-// function checkTime(i) 
-//     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-//     return i;
 
 function showTime(){
     var date = new Date();
